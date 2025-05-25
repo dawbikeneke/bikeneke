@@ -75,11 +75,11 @@ $carrito = $_SESSION['carrito'] ?? [];
             </div>
 
             <div class="col-md-6">
-                <label class="form-label">Duración del alquiler</label>
+                <label class="form-label">Indica horas o días:</label>
                 <div class="input-group">
                     <select name="duracion" class="form-select" required>
-                        <option value="hora">Por horas</option>
-                        <option value="dia">Por días</option>
+                        <option value="hora">Horas</option>
+                        <option value="dia">Días</option>
                     </select>
                     <input type="number" name="unidades_tiempo" class="form-control" min="1" value="1" required>
                 </div>
