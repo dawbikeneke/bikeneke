@@ -1,2 +1,0 @@
-<?php
-// Controlador de administración
