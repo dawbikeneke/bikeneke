@@ -45,7 +45,7 @@ $carrito = $_SESSION['carrito'] ?? [];
     <form id="formSeleccion" action="añadir_al_carrito.php" method="post">
         <div class="row g-3">
             <div class="col-md-4">
-                <label for="tipo_id" class="form-label">Tipo de usuario</label>
+                <label for="tipo_id" class="form-label">¿Quien usará la bici?:</label>
                 <select name="tipo_id" id="tipo_id" class="form-select" required>
                     <option disabled selected>Selecciona tipo</option>
                     <?php foreach ($tipos as $tipo): ?>
@@ -58,7 +58,7 @@ $carrito = $_SESSION['carrito'] ?? [];
             </div>
 
             <div class="col-md-4">
-                <label for="categoria_id" class="form-label">Categoría</label>
+                <label for="categoria_id" class="form-label">Indica el entorno:</label>
                 <select name="categoria_id" id="categoria_id" class="form-select" required>
                     <option disabled selected>Selecciona categoría</option>
                     <?php foreach ($categorias as $cat): ?>
@@ -70,7 +70,7 @@ $carrito = $_SESSION['carrito'] ?? [];
             </div>
 
             <div class="col-md-4">
-                <label for="cantidad" class="form-label">Cantidad</label>
+                <label for="cantidad" class="form-label">Cantidad:</label>
                 <input type="number" name="cantidad" id="cantidad" class="form-control" min="1" value="1" required>
             </div>
 
